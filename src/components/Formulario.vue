@@ -8,7 +8,7 @@ const props = defineProps(['primeiroNumero', 'editaPrimeiroNumero', 'alteraOpera
             <input :value="props.primeiroNumero" @change="props.editaPrimeiroNumero" class="form-control text-center"
                 placeholder="Digite um número" type="number" />
         </div>
-        <div class="col-md-1 t">
+        <div class="col-md-1">
             <select @change="props.alteraOperacao" class="form-select text-center">
                 <option value="adicao">+</option>
                 <option value="subtracao">-</option>
